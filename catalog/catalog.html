@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalog - PC Store</title>
+    <link rel="icon" href="../assets/img/hov.png" />
+    <meta
+      name="description"
+      content="Browse our complete catalog of high-performance gaming PCs, workstations, and budget-friendly computers."
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <a href="../index.html" class="logo">
+            <img
+              src="../assets/img/logo.svg"
+              alt="PC Store Logo"
+              width="40"
+              height="40"
+            />
+            <span>PC Store</span>
+          </a>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li><a href="../index.html" class="nav__link">Home</a></li>
+              <li>
+                <a href="catalog.html" class="nav__link nav__link--active"
+                  >Catalog</a
+                >
+              </li>
+              <li>
+                <a href="../contact/contact.html" class="nav__link">Contact</a>
+              </li>
+              <li>
+                <a
+                  href="../payment/checkout.html"
+                  class="nav__link cart-icon"
+                  aria-label="Shopping Cart"
+                  >🛒</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="catalog-hero">
+        <div class="container">
+          <h1>All Products</h1>
+          <p>Filter by category to find your perfect PC</p>
+        </div>
+      </section>
+
+      <section class="catalog">
+        <div class="container">
+          <div class="catalog-wrapper">
+            <input type="radio" name="category" id="all" checked />
+            <input type="radio" name="category" id="rog" />
+            <input type="radio" name="category" id="tuf" />
+            <input type="radio" name="category" id="macbook" />
+            <input type="radio" name="category" id="dell" />
+
+            <div class="catalog__layout">
+              <aside class="filters">
+                <h2>Filter by Category</h2>
+                <div class="filter-group">
+                  <label for="all" class="filter-label">All Products</label>
+                  <label for="rog" class="filter-label">Rog Strix</label>
+                  <label for="tuf" class="filter-label">Asus TUF</label>
+                  <label for="macbook" class="filter-label">MacBook</label>
+                  <label for="dell" class="filter-label">DELL</label>
+                </div>
+              </aside>
+
+              <div class="products-grid">
+                <article class="product-card rog" data-category="rog">
+                  <img
+                    src="../assets/products/front/asus-rog-strix-g18.png"
+                    alt="Rog Strix G18"
+                    class="product-card__image"
+                  />
+                  <div class="product-card__content">
+                    <h3 class="product-card__title">Rog Strix G18</h3>
+                    <p class="product-card__specs">
+                      Ryzen 5 5600X, RTX 3060, 16GB RAM, 1TB SSD
+                    </p>
+                    <p class="product-card__price">$1,799</p>
+                    <a
+                      href="../product_pages/rog_strix_g18.html"
+                      class="btn btn--secondary"
+                      >View Details</a
+                    >
+                    <a
+                      href="../payment/checkout.html?product=Rog%20Strix%20G18&price=1799"
+                      class="btn btn--primary"
+                      >Add to Cart</a
+                    >
+                  </div>
+                </article>
+
+                <article class="product-card rog" data-category="rog">
+                  <img
+                    src="../assets/products/front/rog-strix-g16-2025.png"
+                    alt="Rog Strix G16"
+                    class="product-card__image"
+                  />
+                  <div class="product-card__content">
+                    <h3 class="product-card__title">Rog Strix G16</h3>
+                    <p class="product-card__specs">
+                      Intel i9-13900K, RTX 4090, 32GB RAM, 2TB NVMe
+                    </p>
+                    <p class="product-card__price">$1,699</p>
+                    <a
+                      href="../product_pages/rog_strix_g16.html"
+                      class="btn btn--secondary"
+                      >View Details</a
+                    >
+                    <a
+                      href="../payment/checkout.html?product=Rog%20Strix%20G16&price=1699"
+                      class="btn btn--primary"
+                      >Add to Cart</a
+                    >
+                  </div>
+                </article>
+
+                <article class="product-card rog" data-category="rog">
+                  <img
+                    src="../assets/products/front/rog-zephyrus-g16-2025-gu605.png"
+                    alt="Rog Zephyrus G16"
+                    class="product-card__image"
+                  />
+                  <div class="product-card__content">
+                    <h3 class="product-card__title">Rog Zephyrus G16</h3>
+                    <p class="product-card__specs">
+                      Ryzen 9 7950X, RTX 4080, 32GB RAM, 2TB NVMe
+                    </p>
+                    <p class="product-card__price">$2,499</p>
+                    <a
+                      href="../product_pages/rog_zephyrus_g16.html"
+                      class="btn btn--secondary"
+                      >View Details</a
+                    >
+                    <a
+                      href="../payment/checkout.html?product=Rog%20Zephyrus%20G16&price=2499"
+                      class="btn btn--primary"
+                      >Add to Cart</a
+                    >
+                  </div>
+                </article>
+
+                <article class="product-card rog" data-category="rog">
+                  <img
+                    src="../assets/products/rog.jpg"
+                    alt="ROG Flow Z13"
+                    class="product-card__image"
+                  />
+                  <div class="product-card__content">
+                    <h3 class="product-card__title">ROG Flow Z13</h3>
+                    <p class="product-card__specs">
+                      Intel Core i9-13900H, RTX 4060, 32GB RAM, 1TB SSD
+                    </p>
+                    <p class="product-card__price">$2,499</p>
+                    <a
+                      href="../product_pages/rog_flow_z13.html"
+                      class="btn btn--secondary"
+                      >View Details</a
+                    >
+                    <a
+                      href="../payment/checkout.html?product=Rog%20Flow%20Z13&price=2499"
+                      class="btn btn--primary"
+                      >Add to Cart</a
+                    >
+                  </div>
+                </article>
+
+                <article class="product-card tuf" data-category="tuf">
+                  <img
+                    src="../assets/products/front/asus tuf f18.png"
+                    alt="Asus TUF F18"
+                    class="product-card__image"
+                  />
+                  <div class="product-card__content">
+                    <h3 class="product-card__title">Asus TUF F18</h3>
+                    <p class="product-card__specs">
+                      Intel i9-13900K, RTX 4090, 64GB RAM, 4TB NVMe
+                    </p>
+                    <p class="product-card__price">$2,199</p>
+                    <a
+                      href="../product_pages/asus_tuf_f18.html"
+                      class="btn btn--secondary"
+                      >View Details</a
+                    >
+                    <a
+                      href="../payment/checkout.html?product=Asus%20TUF%20F18&price=2199"
+                      class="btn btn--primary"
+                      >Add to Cart</a
+                    >
+                  </div>
+                </article>
+
+                <article class="product-card tuf" data-category="tuf">
+                  <img
+                    src="../assets/products/front/asus-tuf-f15.png"
+                    alt="Asus Tuf F15"
+                    class="product-card__image"
+                  />
+                  <div class="product-card__content">
+                    <h3 class="product-card__title">Asus Tuf Gaming F15</h3>
+                    <p class="product-card__specs">
+                      Ryzen 9 7950X, RTX 4080, 64GB RAM, 2TB NVMe
+                    </p>
+                    <p class="product-card__price">$1,299</p>
+                    <a
+                      href="../product_pages/asus_tuf-f15.html"
+                      class="btn btn--secondary"
+                      >View Details</a
+                    >
+                    <a
+                      href="../payment/checkout.html?product=Asus%20Tuf%20F15&price=1299"
+                      class="btn btn--primary"
+                      >Add to Cart</a
+                    >
+                  </div>
+                </article>
+
+                <article class="product-card macbook" data-category="macbook">
+                  <img
+                    src="../assets/products/front/apple-2025-macbook-pro-m4.png"
+                    alt="MacBook Pro M4"
+                    class="product-card__image"
+                  />
+                  <div class="product-card__content">
+                    <h3 class="product-card__title">MacBook Pro M4</h3>
+                    <p class="product-card__specs">
+                      Intel i5-13400F, RTX 4060, 16GB RAM, 1TB SSD
+                    </p>
+                    <p class="product-card__price">$1,599</p>
+                    <a
+                      href="../product_pages/macbook_pro_m4.html"
+                      class="btn btn--secondary"
+                      >View Details</a
+                    >
+                    <a
+                      href="../payment/checkout.html?product=Macbook%20Pro%20M4&price=1599"
+                      class="btn btn--primary"
+                      >Add to Cart</a
+                    >
+                  </div>
+                </article>
+
+                <article class="product-card macbook" data-category="macbook">
+                  <img
+                    src="../assets/products/front/macbook-air-m4.png"
+                    alt="MacBook Air M4"
+                    class="product-card__image"
+                  />
+                  <div class="product-card__content">
+                    <h3 class="product-card__title">MacBook Air M4</h3>
+                    <p class="product-card__specs">
+                      Intel i5-13400F, RTX 4060, 16GB RAM, 1TB SSD
+                    </p>
+                    <p class="product-card__price">$1,299</p>
+                    <a
+                      href="../product_pages/macbook_air_m4.html"
+                      class="btn btn--secondary"
+                      >View Details</a
+                    >
+                    <a
+                      href="../payment/checkout.html?product=Macbook%20Air%20M4&price=1299"
+                      class="btn btn--primary"
+                      >Add to Cart</a
+                    >
+                  </div>
+                </article>
+
+                <article class="product-card dell" data-category="dell">
+                  <img
+                    src="../assets/products/front/alienware-a18.png"
+                    alt="Alienware A18"
+                    class="product-card__image"
+                  />
+                  <div class="product-card__content">
+                    <h3 class="product-card__title">Alienware A18</h3>
+                    <p class="product-card__specs">
+                      Ryzen 7 7700X, RTX 4070, 32GB RAM, 1TB NVMe
+                    </p>
+                    <p class="product-card__price">$2,049</p>
+                    <a
+                      href="../product_pages/alienware-a18.html"
+                      class="btn btn--secondary"
+                      >View Details</a
+                    >
+                    <a
+                      href="../payment/checkout.html?product=Alienware%20a18&price=2049"
+                      class="btn btn--primary"
+                      >Add to Cart</a
+                    >
+                  </div>
+                </article>
+
+                <article class="product-card dell" data-category="dell">
+                  <img
+                    src="../assets/products/front/alienware-a16.png"
+                    alt="Alienware A16"
+                    class="product-card__image"
+                  />
+                  <div class="product-card__content">
+                    <h3 class="product-card__title">Alienware A16</h3>
+                    <p class="product-card__specs">
+                      Ryzen 7 7700X, RTX 4070, 32GB RAM, 1TB NVMe
+                    </p>
+                    <p class="product-card__price">$2,899</p>
+                    <a
+                      href="../product_pages/alienware-a16.html"
+                      class="btn btn--secondary"
+                      >View Details</a
+                    >
+                    <a
+                      href="../payment/checkout.html?product=Alienware%20a16&price=2899"
+                      class="btn btn--primary"
+                      >Add to Cart</a
+                    >
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__section">
+            <h3>Store Hours</h3>
+            <p>Mon-Sun: 8AM-6PM</p>
+          </div>
+          <div class="footer__section">
+            <h3>Policies</h3>
+            <ul>
+              <li>
+                <a href="../policy/shipping-policy.html">Shipping Policy</a>
+              </li>
+              <li>
+                <a href="../policy/returns-policy.html">Returns Policy</a>
+              </li>
+              <li>
+                <a href="../policy/privacy-policy.html">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__section">
+            <h3>Connect</h3>
+            <div class="social-links">
+              <a
+                href="https://www.facebook.com/share/p/16vqjnLu3z/?mibextid=wwXIfr"
+                aria-label="Facebook"
+                >Facebook
+              </a>
+              <a href="https://t.me/henglihov" aria-label="Telegram"
+                >Telegram
+              </a>
+              <a
+                href="https://www.tiktok.com/@kimsor152/video/7535714034620828935?is_from_webapp=1&sender_device=pc"
+                aria-label="TikTok"
+                >TikTok</a
+              >
+            </div>
+          </div>
+        </div>
+        <p class="footer__copyright">
+          &copy; 2025 PC Store. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - PC Store</title>
+    <link rel="icon" href="../assets/img/hov.png" />
+    <meta
+      name="description"
+      content="Complete your purchase at PC Store. Secure checkout with customer information, shipping, and payment details."
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <a href="../index.html" class="logo">
+            <img
+              src="../assets/img/logo.svg"
+              alt="PC Store Logo"
+              width="40"
+              height="40"
+            />
+            <span>PC Store</span>
+          </a>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li><a href="../index.html" class="nav__link">Home</a></li>
+              <li>
+                <a href="../catalog/catalog.html" class="nav__link">Catalog</a>
+              </li>
+              <li>
+                <a href="../contact/contact.html" class="nav__link">Contact</a>
+              </li>
+              <li>
+                <a
+                  href="checkout.html"
+                  class="nav__link cart-icon nav__link--active"
+                  aria-label="Shopping Cart"
+                  >🛒</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="checkout-hero">
+        <div class="container">
+          <h1>Secure Checkout</h1>
+          <p>Complete your purchase in just a few steps</p>
+        </div>
+      </section>
+
+      <section class="checkout">
+        <div class="container">
+          <form
+            class="checkout-form"
+            action="#"
+            method="post"
+            id="checkout-form"
+          >
+            <div class="checkout__layout">
+              <div class="checkout__main">
+                <div class="checkout-section">
+                  <h2>Customer Information</h2>
+                  <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required />
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="firstName">First Name *</label>
+                      <input
+                        type="text"
+                        id="firstName"
+                        name="firstName"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="lastName">Last Name *</label>
+                      <input
+                        type="text"
+                        id="lastName"
+                        name="lastName"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" />
+                  </div>
+                </div>
+
+                <div class="checkout-section">
+                  <h2>Shipping Address</h2>
+                  <div class="form-group">
+                    <label for="address">Address *</label>
+                    <input type="text" id="address" name="address" required />
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="city">City *</label>
+                      <input type="text" id="city" name="city" required />
+                    </div>
+                    <div class="form-group">
+                      <label for="state">State *</label>
+                      <input type="text" id="state" name="state" required />
+                    </div>
+                    <div class="form-group">
+                      <label for="zip">ZIP Code *</label>
+                      <input type="text" id="zip" name="zip" required />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="country">Country *</label>
+                    <select id="country" name="country" required>
+                      <option value="">Select Country</option>
+                      <option value="KH">Cambodia</option>
+                      <option value="US">United States</option>
+                      <option value="CA">Canada</option>
+                      <option value="UK">United Kingdom</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="checkout-section">
+                  <h2>Payment Information</h2>
+                  <div
+                    class="payment-qrcode-info"
+                    id="qrSection"
+                    style="display: block"
+                  >
+                    <h3>Scan this QR Code to Pay</h3>
+                    <img
+                      src="https://raw.githubusercontent.com/LIHOV888/leeminhov/3e85a6340668dc3de2469ad69934f8cea8efd4dd/img/pay.png"
+                      alt="QR Code"
+                      style="
+                        width: 250px;
+                        height: 250px;
+                        margin: 0 auto;
+                        display: block;
+                      "
+                    />
+                    <p>Transaction Code: <span>LIHOV</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <aside class="checkout__sidebar">
+                <div class="order-summary">
+                  <h2>Order Summary</h2>
+                  <div class="order-items">
+                    <div class="order-item">
+                      <img
+                        src="../assets/products/rog.jpg"
+                        alt="Rog Strix G18"
+                        class="order-item__image"
+                      />
+                      <div class="order-item__details">
+                        <h4>YOUR LAPTOP</h4>
+                        <p>Complete All For Buy.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="order-totals">
+                    <div class="order-total"></div>
+                  </div>
+                  <!-- Hidden checkbox to control state -->
+                  <input type="checkbox" id="doneCheck" hidden />
+
+                  <!-- Label acts as submit button -->
+                  <label
+                    for="doneCheck"
+                    type="submit"
+                    class="btn btn--primary btn--large btn--full-width"
+                  >
+                    Complete Order
+                  </label>
+
+                  <!-- Message shown after clicking -->
+                  <p class="done-message">
+                    ✅ Payment successful!<br />
+                    Thank you for your order.<br />
+                  </p>
+                </div>
+              </aside>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__section">
+            <h3>Store Hours</h3>
+            <p>Mon-Fri: 9AM-6PM</p>
+            <p>Sat-Sun: 10AM-4PM</p>
+          </div>
+          <div class="footer__section">
+            <h3>Policies</h3>
+            <ul>
+              <li>
+                <a href="../policy/shipping-policy.html">Shipping Policy</a>
+              </li>
+              <li>
+                <a href="../policy/returns-policy.html">Returns Policy</a>
+              </li>
+              <li>
+                <a href="../policy/privacy-policy.html">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__section">
+            <h3>Connect</h3>
+            <div class="social-links">
+              <a
+                href="https://www.facebook.com/share/p/16vqjnLu3z/?mibextid=wwXIfr"
+                aria-label="Facebook"
+                >📘</a
+              >
+              <a href="#" aria-label="Twitter">🐦</a>
+              <a href="#" aria-label="Instagram">📷</a>
+            </div>
+          </div>
+        </div>
+        <p class="footer__copyright">
+          &copy; 2025 PC Store. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <style>
+      .done-message {
+        display: none;
+        color: green;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+
+      /* When checkbox is checked, show the message */
+      #doneCheck:checked + .btn + .done-message {
+        display: block;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 12px 20px;
+        background: #007bff;
+        color: white;
+        border-radius: 6px;
+        cursor: pointer;
+        text-align: center;
+      }
+
+      .btn:hover {
+        background: #0056b3;
+      }
+
+      /* Position QR code correctly */
+      .payment-qrcode-info {
+        text-align: center;
+        margin-top: 2rem;
+      }
+    </style>
+  </body>
+</html>

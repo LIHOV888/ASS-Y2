@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - PC Store</title>
+    <link rel="icon" href="../assets/img/hov.png" />
+    <meta
+      name="description"
+      content="Get in touch with PC Store. Learn about our mission, warranty, support, and contact us for any questions about our high-performance computers."
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <a href="../index.html" class="logo">
+            <img
+              src="../assets/img/logo.svg"
+              alt="PC Store Logo"
+              width="40"
+              height="40"
+            />
+            <span>PC Store</span>
+          </a>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li><a href="../index.html" class="nav__link">Home</a></li>
+              <li>
+                <a href="../catalog/catalog.html" class="nav__link">Catalog</a>
+              </li>
+              <li>
+                <a href="contact.html" class="nav__link nav__link--active"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../payment/checkout.html"
+                  class="nav__link cart-icon"
+                  aria-label="Shopping Cart"
+                  >🛒</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="contact-hero">
+        <div class="container">
+          <h1>Contact Us</h1>
+          <p>Get in touch with our team for any questions or support</p>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <div class="contact__layout">
+            <div class="contact__form-section">
+              <h2>Send Us a Message</h2>
+              <form
+                class="contact-form"
+                id="contact-form"
+                action="#"
+                method="post"
+              >
+                <div class="form-group">
+                  <label for="contact-name">Full Name *</label>
+                  <input type="text" id="contact-name" name="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="contact-email">Email Address *</label>
+                  <input
+                    type="email"
+                    id="contact-email"
+                    name="email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="contact-subject">Subject *</label>
+                  <select id="contact-subject" name="subject" required>
+                    <option value="">Select a topic</option>
+                    <option value="sales">Sales Inquiry</option>
+                    <option value="support">Technical Support</option>
+                    <option value="warranty">Warranty Claim</option>
+                    <option value="shipping">Shipping Question</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="contact-message">Message *</label>
+                  <textarea
+                    id="contact-message"
+                    name="message"
+                    rows="5"
+                    required
+                    placeholder="Tell us how we can help..."
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn--primary">
+                  Send Message
+                </button>
+              </form>
+            </div>
+
+            <div class="contact__info">
+              <h2>Get In Touch</h2>
+              <div class="contact__details">
+                <div class="contact__item">
+                  <h3>📍 Address</h3>
+                  <p>
+                    Cambodia<br />
+                    Kampong Thom, TB 12000
+                  </p>
+                </div>
+                <div class="contact__item">
+                  <h3>📞 Phone</h3>
+                  <p><a href="tel:+855962192023">(096) 000-1234</a></p>
+                </div>
+                <div class="contact__item">
+                  <h3>✉️ Email</h3>
+                  <p>
+                    <a href="mailto:henglihov88@gmail.com"
+                      >support@pcstore.com</a
+                    >
+                  </p>
+                </div>
+                <div class="contact__item">
+                  <h3>🕒 Business Hours</h3>
+                  <p>
+                    Monday - Friday: 9AM - 6PM<br />
+                    Saturday - Sunday: 10AM - 4PM<br />
+                    (Asian Time: +7:00)
+                  </p>
+                </div>
+              </div>
+
+              <div class="map-placeholder">
+                <h3>Our Location</h3>
+                <div class="map">
+                  <p>
+                    Cambodia<br />
+                    Kampong Thom, TB 12000
+                  </p>
+                  <a href="https://maps.app.goo.gl/vPWrcPnmiivSr9is6"
+                    >Visit Us - LINK</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq">
+        <div class="container">
+          <h2>Frequently Asked Questions</h2>
+          <div class="faq__list">
+            <div class="faq__item">
+              <h3>How long does shipping take?</h3>
+              <p>
+                We offer free 2-day shipping on all orders. Custom builds may
+                take 3-5 business days to assemble before shipping.
+              </p>
+            </div>
+            <div class="faq__item">
+              <h3>What's included in the warranty?</h3>
+              <p>
+                Our 3-year warranty covers all parts and labor. We also offer
+                lifetime technical support via phone, email, or chat.
+              </p>
+            </div>
+            <div class="faq__item">
+              <h3>Can I customize my PC?</h3>
+              <p>
+                Yes! Contact our sales team to discuss custom configurations
+                tailored to your specific needs and budget.
+              </p>
+            </div>
+            <div class="faq__item">
+              <h3>Do you offer financing?</h3>
+              <p>
+                Yes, we offer 0% APR financing for qualified customers through
+                our partner Affirm. Apply at checkout.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__section">
+            <h3>Store Hours</h3>
+            <p>Mon-Sun: 8AM-6PM</p>
+          </div>
+          <div class="footer__section">
+            <h3>Policies</h3>
+            <ul>
+              <li>
+                <a href="../policy/shipping-policy.html">Shipping Policy</a>
+              </li>
+              <li>
+                <a href="../policy/returns-policy.html">Returns Policy</a>
+              </li>
+              <li>
+                <a href="../policy/privacy-policy.html">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__section">
+            <h3>Connect</h3>
+            <div class="social-links">
+              <a
+                href="https://www.facebook.com/share/p/16vqjnLu3z/?mibextid=wwXIfr"
+                aria-label="Facebook"
+                >Facebook
+              </a>
+              <a href="https://t.me/henglihov" aria-label="Telegram"
+                >Telegram
+              </a>
+              <a
+                href="https://www.tiktok.com/@kimsor152/video/7535714034620828935?is_from_webapp=1&sender_device=pc"
+                aria-label="TikTok"
+                >TikTok</a
+              >
+            </div>
+          </div>
+        </div>
+        <p class="footer__copyright">
+          &copy; 2025 PC Store. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
